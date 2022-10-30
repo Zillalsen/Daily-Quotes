@@ -27,6 +27,7 @@ speech.addEventListener("click", () => {
   let utterance = new SpeechSynthesisUtterance(
     `${quote.textContent} By ${author.textContent}`
   );
+     utterance.lang = "en-US";
   speechSynthesis.speak(utterance); // speak methode of speechSynthesis speaks the utterance
 });
 
